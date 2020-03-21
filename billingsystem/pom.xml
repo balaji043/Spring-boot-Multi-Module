@@ -8,12 +8,12 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.5.RELEASE</version>
+		<version>2.0.3.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.bam.billingsystem</groupId>
-	<artifactId>billingsystem</artifactId>
+	<groupId>com.bam.bs</groupId>
+	<artifactId>billing-system-starter-parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Billing System</name>
 
@@ -25,6 +25,12 @@
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+
+	<modules>
+		<module>bs-common-project</module>
+		<module>customer-management</module>
+		<module>user-management</module>
+	</modules>
 
 	<dependencies>
 
@@ -43,7 +49,6 @@
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
-			<version>1.8.12</version>
 		</dependency>
 
 		<dependency>

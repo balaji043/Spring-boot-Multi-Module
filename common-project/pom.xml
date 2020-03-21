@@ -2,7 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -10,28 +9,25 @@
 		<artifactId>billing-system-starter-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-
 	<packaging>jar</packaging>
 
-	<groupId>com.bam.bs.cm</groupId>
-	<artifactId>customer-management</artifactId>
-	<version>0.0.-SNAPSHOT</version>
-	<name>Customer-Management</name>
-	<description>The Customer-Management project as a sub modules.</description>
+	<groupId>com.bam.bs.common</groupId>
+	<artifactId>bs-common-project</artifactId>
+	<name>common-project</name>
+	<description>Demo project for Spring Boot</description>
 
-	<dependencies>
-		<dependency>
-			<groupId>com.bam.bs.common</groupId>
-			<artifactId>bs-common-project</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
+
+
 </project>
